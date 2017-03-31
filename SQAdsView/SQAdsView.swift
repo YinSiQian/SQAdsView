@@ -15,12 +15,12 @@ enum CountDownButtonType {
 }
 
 enum CountDownButtonLocation {
-    case TopRightCorner
-    case TopLeftCorner
-    case TopHorizontally
-    case BottomRightCorner
-    case BottomLeftCorner
-    case BottomHorizontally
+    case topRightCorner
+    case topLeftCorner
+    case topHorizontally
+    case bottomRightCorner
+    case bottomLeftCorner
+    case bottomHorizontally
 }
 
 
@@ -42,7 +42,7 @@ class SQAdsView: UIView {
     
     fileprivate let screen_height = UIScreen.main.bounds.height
     
-    var location: CountDownButtonLocation = .TopRightCorner
+    var location: CountDownButtonLocation = .topRightCorner
     
     var type: CountDownButtonType = .normal
     
@@ -74,31 +74,31 @@ class SQAdsView: UIView {
         
     }
     
-    private func changeLocation() {
+    fileprivate func changeLocation() {
         let rect = self.timeBtn.frame
         switch location {
-        case .BottomHorizontally:
+        case .bottomHorizontally:
             self.timeBtn.frame = CGRect(origin: CGPoint(x: (screen_width - rect.width) / 2, y: screen_height - 100 ), size: CGSize(width: rect.width, height: rect.height))
             
-        case .BottomLeftCorner:
+        case .bottomLeftCorner:
             self.timeBtn.frame = CGRect(x: 30, y: screen_height - 100, width: rect.width, height: rect.height)
             
-        case .BottomRightCorner:
+        case .bottomRightCorner:
             self.timeBtn.frame = CGRect(x:screen_width - 70, y: screen_height - 100, width: rect.width, height: rect.height)
             
-        case .TopHorizontally:
+        case .topHorizontally:
             self.timeBtn.frame = CGRect(x:(screen_width - rect.width) / 2, y: 40, width: rect.width, height: rect.height)
             
-        case .TopLeftCorner:
+        case .topLeftCorner:
             self.timeBtn.frame = CGRect(x:30, y: 40, width: rect.width, height: rect.height)
             
-        case .TopRightCorner:
+        case .topRightCorner:
             self.timeBtn.frame = CGRect(x:screen_width - 70, y: 40, width: rect.width, height: rect.height)
             
         }
     }
     
-    private func changeStyle() {
+    fileprivate func changeStyle() {
         switch type {
         case .oval:
             self.timeBtn.layer.cornerRadius = self.timeBtn.frame.height / 2
@@ -135,7 +135,7 @@ class SQAdsView: UIView {
         RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
     }
     
-    func removed() {
+    fileprivate func removed() {
         timer.invalidate()
         var rect = self.frame
         rect.origin.y = -screen_height

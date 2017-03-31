@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func loadADImage() {
         
         
-        let adsView = SQAdsView(frame: UIScreen.main.bounds, location: .TopRightCorner, type: .oval)
+        let adsView = SQAdsView(frame: UIScreen.main.bounds, location: .topRightCorner, type: .oval)
         
         let path = Bundle.main.path(forResource: "w640", ofType: "jpeg")
         
