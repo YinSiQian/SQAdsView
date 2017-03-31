@@ -10,7 +10,9 @@
 ```
 网络图片加载
 ```Swift
-    adsView.imageView.kf.setImage(with: imageURL?.url(), placeholder: nil, options: [], progressBlock: nil, completionHandler:         { (image, error, type, url) in
+    adsView.imageView.kf.setImage(with: imageURL?.url(), placeholder: nil, options: [], 
+    progressBlock: nil, completionHandler:         
+    { (image, error, type, url) in
              self.window?.addSubview(startView)
              adsView.start()
     })
