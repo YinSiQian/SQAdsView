@@ -12,6 +12,8 @@
 		8B6FA7FE1E8E367400375388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6FA7FC1E8E367400375388 /* Main.storyboard */; };
 		8B6FA8001E8E367400375388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6FA7FF1E8E367400375388 /* Assets.xcassets */; };
 		8B6FA8031E8E367400375388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6FA8011E8E367400375388 /* LaunchScreen.storyboard */; };
+		8B6FA80C1E8E36D100375388 /* SQAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FA80B1E8E36D100375388 /* SQAdsView.swift */; };
+		8B6FA80E1E8E378100375388 /* w640.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8B6FA80D1E8E378100375388 /* w640.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8B6FA7FF1E8E367400375388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B6FA8021E8E367400375388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B6FA8041E8E367400375388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6FA80B1E8E36D100375388 /* SQAdsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQAdsView.swift; sourceTree = "<group>"; };
+		8B6FA80D1E8E378100375388 /* w640.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w640.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		8B6FA7F71E8E367300375388 /* SQAdsView */ = {
 			isa = PBXGroup;
 			children = (
+				8B6FA80A1E8E36A100375388 /* AdsView */,
 				8B6FA7F81E8E367300375388 /* AppDelegate.swift */,
 				8B6FA7FA1E8E367300375388 /* ViewController.swift */,
 				8B6FA7FC1E8E367400375388 /* Main.storyboard */,
 				8B6FA7FF1E8E367400375388 /* Assets.xcassets */,
+				8B6FA80D1E8E378100375388 /* w640.jpeg */,
 				8B6FA8011E8E367400375388 /* LaunchScreen.storyboard */,
 				8B6FA8041E8E367400375388 /* Info.plist */,
 			);
 			path = SQAdsView;
+			sourceTree = "<group>";
+		};
+		8B6FA80A1E8E36A100375388 /* AdsView */ = {
+			isa = PBXGroup;
+			children = (
+				8B6FA80B1E8E36D100375388 /* SQAdsView.swift */,
+			);
+			name = AdsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			files = (
 				8B6FA8031E8E367400375388 /* LaunchScreen.storyboard in Resources */,
 				8B6FA8001E8E367400375388 /* Assets.xcassets in Resources */,
+				8B6FA80E1E8E378100375388 /* w640.jpeg in Resources */,
 				8B6FA7FE1E8E367400375388 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6FA7FB1E8E367300375388 /* ViewController.swift in Sources */,
+				8B6FA80C1E8E36D100375388 /* SQAdsView.swift in Sources */,
 				8B6FA7F91E8E367300375388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KAN8WX649Q;
 				INFOPLIST_FILE = SQAdsView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ysq.SQAdsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KAN8WX649Q;
 				INFOPLIST_FILE = SQAdsView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ysq.SQAdsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
